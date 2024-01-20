@@ -1,0 +1,18 @@
+# Name of the workflow
+name: First Workflow
+
+# When the workflow will be triggered
+on: workflow_dispatch
+
+# The work that needs to be completed with the workflow
+jobs: 
+  # Give your job a name, can be anything you want. 
+  first-job: 
+    #Identify the runner - Google "Github Actions Runners" for a complete list of potential runners
+    runs-on: unbuntu-latest
+    steps: 
+      - name: Print gretting
+        #Steps can either be CLI Commands or "Actions"
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
