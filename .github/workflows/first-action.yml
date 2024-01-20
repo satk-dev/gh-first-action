@@ -9,7 +9,7 @@ jobs:
   # Give your job a name, can be anything you want. 
   first-job: 
     #Identify the runner - Google "Github Actions Runners" for a complete list of potential runners
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps: 
       - name: Print gretting
         #Steps can either be CLI Commands or "Actions"
