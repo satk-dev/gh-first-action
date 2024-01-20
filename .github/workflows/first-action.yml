@@ -11,8 +11,13 @@ jobs:
     #Identify the runner - Google "Github Actions Runners" for a complete list of potential runners
     runs-on: ubuntu-latest
     steps: 
-      - name: Print gretting
+      - name: Print greeting
         #Steps can either be CLI Commands or "Actions"
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done - bye!"
+
+# Note: In order to run multiple shell cmds in one step, you would use the <|> symbol, example below.  
+#    run: |
+#     echo "First output"
+#     echo "Second output"
